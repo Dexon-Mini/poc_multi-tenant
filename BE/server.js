@@ -7,20 +7,25 @@ app.use(express.json()); // Để parse JSON body
 
 // In-memory data: thay bằng DB (MySQL/Mongo...) trong thực tế
 let tenants = {
-  "tenant1.mydomain.com": {
+  "localhost:3001": {
     theme: {
       brandName: "Tenant 1",
+      layoutType: "layoutA",
       primaryColor: "#FF0000",
       backgroundColor: "#FFF0F0",
+      promotionBgColor: "#FFECEC",
+      promotionTitleColor: "#B80000",
+      promotionTextColor: "#333",
     },
     promotions: [
       { title: "Buy 1 Get 1 Free", desc: "Áp dụng tuần này" },
       { title: "Giảm 20%", desc: "Cho khách hàng mới" },
     ],
   },
-  "tenant2.mydomain.com": {
+  "localhost:3002": {
     theme: {
       brandName: "Tenant 2",
+      layoutType: "layoutB",
       primaryColor: "#0066FF",
       backgroundColor: "#F0F8FF",
     },
@@ -32,7 +37,8 @@ let tenants = {
   default: {
     theme: {
       brandName: "Default Tenant",
-      primaryColor: "#333333",
+      layoutType: "none",
+      primaryColor: "#FF00FF",
       backgroundColor: "#FFFFFF",
     },
     promotions: [],
