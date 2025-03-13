@@ -1,7 +1,7 @@
 // components/PromotionList.js
 import PromotionItem from "./PromotionItem";
 
-export default function PromotionList({ promotions, theme }) {
+export default function PromotionList({ promotions }) {
   if (!promotions || promotions.length === 0) {
     return <p>Không có khuyến mãi.</p>;
   }
@@ -9,7 +9,7 @@ export default function PromotionList({ promotions, theme }) {
   return (
     <div>
       {promotions.map((promo, idx) => (
-        <PromotionItem key={idx} promotion={promo} theme={theme} />
+        <PromotionItem key={idx} promotion={promo} />
       ))}
     </div>
   );

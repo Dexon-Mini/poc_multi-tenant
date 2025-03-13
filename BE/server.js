@@ -11,11 +11,7 @@ let tenants = {
     theme: {
       brandName: "Tenant 1",
       layoutType: "layoutA",
-      primaryColor: "#FF0000",
-      backgroundColor: "#FFF0F0",
-      promotionBgColor: "#FFECEC",
-      promotionTitleColor: "#B80000",
-      promotionTextColor: "#333",
+      themeID: "themeA",
     },
     promotions: [
       { title: "Buy 1 Get 1 Free", desc: "Áp dụng tuần này" },
@@ -26,8 +22,7 @@ let tenants = {
     theme: {
       brandName: "Tenant 2",
       layoutType: "layoutB",
-      primaryColor: "#0066FF",
-      backgroundColor: "#F0F8FF",
+      themeID: "themeB",
     },
     promotions: [
       { title: "Sale 30%", desc: "Chỉ trong 2 ngày" },
@@ -38,8 +33,6 @@ let tenants = {
     theme: {
       brandName: "Default Tenant",
       layoutType: "none",
-      primaryColor: "#FF00FF",
-      backgroundColor: "#FFFFFF",
     },
     promotions: [],
   },

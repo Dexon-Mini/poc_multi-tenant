@@ -1,0 +1,46 @@
+/* styles/themes.css */
+
+/* Các biến mặc định */
+:root {
+    --primary-color: #000000;
+    --background-color: #FFFFFF;
+    --promotion-bg-color: #ECECEC;
+    --promotion-title-color: #333333;
+    --promotion-text-color: #444444;
+}
+
+/* Định nghĩa theme cho Tenant 1 */
+.themeA {
+    --primary-color: #FF0000;
+    --background-color: #FFF0F0;
+    --promotion-bg-color: #FFECEC;
+    --promotion-title-color: #B80000;
+    --promotion-text-color: #333;
+}
+
+/* Định nghĩa theme cho Tenant 2 */
+.themeB {
+    --primary-color: #0066FF;
+    --background-color: #F0F8FF;
+/* Các biến có thể override nếu cần */
+}
+
+/* Áp dụng các biến CSS */
+body,
+.themeA,
+.themeB {
+    background-color: var(--background-color);
+    color: var(--primary-color);
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+/* Style cho khối promotion */
+.promotion {
+    background-color: var(--promotion-bg-color);
+    color: var(--promotion-title-color);
+    padding: 1rem;
+    margin: 0.5rem 0;
+    border-radius: 4px;
+}
